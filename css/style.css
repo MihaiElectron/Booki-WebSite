@@ -133,22 +133,54 @@ nav {
 .search-form {
     width: 377px;
     height: 49px;
+    border: solid 1px, #F2F2F2;
+    border-radius: 15px;
     display: flex;
+    align-items: center;
 }
 
-.form-localisation {
+.localisation-img {
+    width: 50px;
+    height: 49px;
     display: flex;
-    height: 100%;
-}
-
-.form-localisation img {
-    border: solid 1px;
+    flex: 0 0 50px;
+    justify-content: center;
+    align-items: center;
     border-radius: 15px 0px 0px 15px;
-    padding: 16px;
+    background-color: #F2F2F2;
 }
 
-.form-localisation input {
+.localisation-img img {
+    width: 14px;
+    height: 18px;
+}
+
+.city-input {
     text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    width: calc(377px - 50px - 132px);
+}
+
+.search-btn {
+    background-color: #0065FC;
+    align-items: center;
+    width: 132px;    
+    height: 49px;
+    border-radius: 0px 15px 15px 0px;
+    padding: 15px 16px;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.city-input {
+    border: none;
+}
+
+.search-btn {
+    border: none;
 }
 
 .filters {
