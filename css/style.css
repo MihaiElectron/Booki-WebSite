@@ -384,10 +384,71 @@ article .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 30px 0px;
+    padding: 30px;
     gap: 30px;
 }
 
+.activites-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    height: 439px;
+    gap: 30px;
+}
+
+.activite-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+
+}
+
+.activite-card img {
+    width: 297px;
+    height: 380px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activite-card-txt {
+    padding: 20px 19px 20px 19px;
+}
+
+.activite-card-txt h4 {
+    display: flex;
+        
+}
+
+/*** Footer ***/
+
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    height: 163px;
+    background-color: #F2F2F2;
+}
+
+.footer-menu-container {
+    width: 446px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+}
+
+.footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.footer-title {
+    font-size: 18px;
+}
+.footer-link {
+    font-size: 16px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
