@@ -1,4 +1,8 @@
 /****** General ***********/
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'Raleway', sans-serif;
     margin: 0px;
@@ -19,9 +23,12 @@ body {
     display: flex;
     flex-direction: column;/*** Je remplace justify-content: center; et ajoute flex-direction et align-items pour permettre a la nav d'être centrée horizontalement et non côte à côte du main-container. Ainsi la nav prend 1440px sans le padding imposé par main-container ***/
     align-items: center;
+    
 }
 
 .main-container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
@@ -177,6 +184,7 @@ nav {
 
 .city-input {
     border: none;
+    outline: none;
 }
 
 .search-btn {
@@ -279,58 +287,63 @@ nav {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    width: 66%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 30px;
+    gap: 30px;
 }
 
 .hebergements-title {
-   
+   display: flex;
+   align-items: center;
 }
 
 .hebergements-cards {
     display: flex;
-    justify-content: space-between;
-    padding: 20px 0px;
+    justify-content: space-between;  
+    gap: 30px;
+    
 }
 
-article .card {
-    margin-top: 33px;
-    padding-bottom: 15px; 
+.hebergement-card {
+    width: 250.33px;
+    height: 207.25px;
+    border-radius: 20px;
+    background-color: white;
 }
 
-.hebergements-cards img {
-    width: 230px;
+.hebergement-card-img {
+    width: 100%;
     height: 124px;
+    object-fit: cover;
     border: solid 5px white;
     border-radius: 20px 20px 0px 0px;
+    box-sizing: border-box;
 }
 
-.card-content {
+.hebergement-card-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 0px 15px;
     gap: 8px;
+    
 }
 
-.card-content .card-title {
+.hebergement-card-title {
     font-size: 16px;
 }
 
-.card-txt {
+.hebergement-card-txt {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
 .show-more {
-    font-size: 21px;
-    font-weight: bold;
-    
-    
-    
+    font-size: 18px;  
 }
 
 /****** Populaires ***********/
@@ -381,9 +394,9 @@ article .card {
 /*** Activités à MArseille ***/
 
 .activites {
+    margin-top: 35px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: 30px;
     gap: 30px;
 }
@@ -405,7 +418,8 @@ article .card {
 }
 
 .activite-card img {
-    width: 297px;
+    object-fit: cover;
+    width: 297.5px;
     height: 380px;
     border-radius: 20px 20px 0px 0px;
 }
@@ -422,6 +436,7 @@ article .card {
 /*** Footer ***/
 
 .footer {
+    margin-top: 35px;
     display: flex;
     justify-content: flex-start;
     height: 163px;
