@@ -406,27 +406,30 @@ a {
     flex-direction: column;
     padding: 30px;
     gap: 30px;
+    box-sizing: border-box;
 }
 
 .activites-cards {
     display: flex;
     justify-content: space-between;
-    width: 1280px;
+    width: 100%;
     height: 439px;
     gap: 30px;
+    box-sizing: border-box;
 }
 
 .activite-card {
     display: flex;
     flex-direction: column;
+    flex: 1;
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px #0000001A;
-
+    box-sizing: border-box;
 }
 
 .activite-card img {
     object-fit: cover;
-    width: 297.5px;
+    width: 100%;
     height: 380px;
     border-radius: 20px 20px 0px 0px;
 }
@@ -476,13 +479,14 @@ a {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) 
+/* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     
 
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column;
+        height: auto;
     }
 
     .hebergements {
@@ -527,7 +531,7 @@ a {
     }
 
 }
-*/
+
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
@@ -661,6 +665,12 @@ a {
         align-items: center;
     }
 
+    .populaires-cards a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
     .card img {
         height: 146px;
     }
@@ -669,6 +679,7 @@ a {
         width: 335px;
         height: 146px;
     }
+
     .hebergements {
         flex-direction: column;
         width: 100%;
@@ -696,6 +707,7 @@ a {
         height: auto;
         display: flex;
         flex-direction: column;
+        box-sizing: border-box;
     }
 
     .activites-cards {
@@ -709,7 +721,7 @@ a {
 
     .activite-card {
         width: auto;
-
+        justify-content: cen;
     }
 
     .activite-card a {
@@ -726,7 +738,9 @@ a {
         flex-direction: column;
         width: 100%;
         height: auto;
+        padding: 30px;
         background: #F2F2F2;
+        box-sizing: border-box;
         
     }
 }
