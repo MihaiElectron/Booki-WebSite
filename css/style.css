@@ -79,6 +79,7 @@ body {
 }
 
 h1 {
+    font-weight: 700;
     font-size: 22px;
 }
 
@@ -184,9 +185,10 @@ a {
 .search-form {
     width: 377px;
     height: 49px;
-    
     display: flex;
     align-items: center;
+    border: solid 1px #F2F2F2;
+    border-radius: 15px;
 }
 
 .localisation-img {
@@ -210,6 +212,7 @@ a {
     font-size: 18px;
     font-weight: bold;
     width: calc(377px - 50px - 132px);
+    border-top: solid ;
 }
 
 .search-btn {
@@ -285,6 +288,7 @@ a {
 .total-disponibility {
     position: relative;
     display: flex;
+    align-items: center;
     width: auto;
     height: 24px;
     gap: 10px;
@@ -292,18 +296,17 @@ a {
 
 .total-disponibility img {
     position: absolute;
-
 }
 
-.elipse {
+.ellipse {    
     width: 24px;
     height: 24px;
 }
 
-.info {
+.info {    
     width: 4px;
     height: 10px;
-    padding: 7px 0px 0px 10px;
+    padding-left: 10px;
 }
 
 /*** A utiliser au besoin si l'image n'est pas transparente 
@@ -728,7 +731,7 @@ a {
         box-sizing: border-box;
         display: flex;
         margin-top: 0px;
-        padding: 0px;
+        padding: 30px 20px 30px 20px;
         flex-direction: column;
         order: 1;
         background-color: whi;
@@ -738,7 +741,7 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 30px 20px;
+        padding: Opx;
     }
 
     .populaires-cards a {
@@ -759,6 +762,7 @@ a {
         width: auto;
         order: 2;
         background-color: white !important;
+        padding: 20px;
     }
 
     .hebergements-cards {
@@ -769,10 +773,6 @@ a {
 
     .hebergement-card {
         width: 100%;        
-    }
-
-    .hebergement-card a {
-    
     }
 
     .hebergement-card-img {
@@ -789,11 +789,6 @@ a {
         padding: 30px;
        
     }
-
-    .activites-title {
-
-    }
-
 
     .activites-cards {
         display: flex;
